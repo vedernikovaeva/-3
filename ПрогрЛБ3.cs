@@ -45,6 +45,8 @@ class Program
         exportXml.Save("Export.xml");
         Console.WriteLine("Файл створено");
 
+        Console.WriteLine(exportXml);
+
         string searchCode = "02";
         var searchedItem = exportItems.FirstOrDefault(item => item.Code == searchCode);
         if (searchedItem != null)
